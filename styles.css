@@ -1,0 +1,165 @@
+/* Font Family: Kumb Sans with weights: 400 and 700 */
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap');
+
+:root {
+    /* Primary */
+    --dark-cyan: hsl(185, 75%, 39%); 
+    --desaturated-blue: hsl(229, 23%, 23%); 
+    --dark-gray-blue: hsl(227, 10%, 46%);
+
+    /* Neutral */
+    --dark-gray: hsl(0, 0%, 59%);
+}
+
+body, main {
+    background: url("images/bg-pattern-top.svg") top -450px left -300px no-repeat, url("images/bg-pattern-bottom.svg") bottom -450px right -300px no-repeat;
+    background-color: hsl(185, 75%, 39%) ;
+
+    font-family: "Kumbh Sans", sans-serif;
+    color: hsl(229, 23%, 23%);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 100vw;
+    min-height: 100svh;
+
+    margin: 0 auto;
+}
+
+hr {
+    width: 100%;
+    /* border-bottom: 1px solid var(--dark-gray-blue); */
+    /* border-bottom: 1px solid  hsl(0, 0%, 59%); */
+    border-color: hsla(0, 0%, 59%, 0.232);
+    margin-bottom: 0;
+}
+
+.card {
+    background-image: url("images/bg-pattern-card.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+    /* min-height: 28em; */
+    background-color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    border-radius: 10px;
+    text-align: center;
+}
+
+div.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-pic {
+    border: 0.4rem solid white;
+    border-radius: 5rem;
+    margin-top: 6rem;
+    margin-bottom: 1rem;
+    width: 7rem;
+}
+
+.name-age {
+    display: flex;
+    text-align: center;
+    margin-top: 1.35rem;
+    margin-bottom: 1rem;
+}
+
+.age {
+    margin-left: 0.5rem;
+}
+
+.name, .age, .number {
+    font-size: 1.35rem;
+    font-weight: 700;
+}
+
+.age, .location, .category {
+    color: hsl(0, 0%, 59%);
+    font-weight: 400;
+}
+
+.location {
+    margin-bottom: 2rem;
+}
+
+.stats {
+    display: flex;
+    margin: 1.35rem;
+}
+
+.followers, .likes, .photos {
+    margin: 0 1.8rem;
+}
+
+.number, .category {
+    margin: 10px 0;
+}
+
+.category {
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+
+.attribution { 
+    position: absolute;
+    bottom: 1rem;
+    font-size: 1rem; 
+    text-align: center; 
+    color: white;
+    line-height: 1.5rem;
+}
+
+.attribution a { 
+    color: white; 
+}
+
+@media (max-width: 376px) {
+
+    body, main {
+        background: url("images/bg-pattern-top.svg") top -35em left -48em no-repeat, url("images/bg-pattern-bottom.svg") bottom -34em right -48em no-repeat;
+
+        background-color: hsl(185, 75%, 39%) ;
+    }
+    
+
+    .profile-pic {
+        border: 0.35rem solid white;
+        border-radius: 5rem;
+        margin-top: 5rem;
+        /* margin-bottom: 3rem; */
+        /* margin-bottom: 1.5rem; */
+        width: 6.5rem;
+
+        /* border-radius: 5rem; */
+        /* margin-top: 6rem; */
+        /* margin-bottom: 1rem; */
+        /* width: 7rem; */
+    }
+
+    .stats {
+        margin: 1.5rem;
+    }
+
+    .followers, .likes, .photos {
+        margin: 0 1.25rem;
+    }
+
+    .location {
+        margin-top: 0.5rem;
+    }
+
+
+}
