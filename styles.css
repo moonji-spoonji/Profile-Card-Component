@@ -31,8 +31,6 @@ body, main {
 
 hr {
     width: 100%;
-    /* border-bottom: 1px solid var(--dark-gray-blue); */
-    /* border-bottom: 1px solid  hsl(0, 0%, 59%); */
     border-color: hsla(0, 0%, 59%, 0.232);
     margin-bottom: 0;
 }
@@ -41,8 +39,6 @@ hr {
     background-image: url("images/bg-pattern-card.svg");
     background-size: contain;
     background-repeat: no-repeat;
-    
-    /* min-height: 28em; */
     background-color: white;
 
     display: flex;
@@ -130,23 +126,14 @@ div.profile {
 
     body, main {
         background: url("images/bg-pattern-top.svg") top -35em left -48em no-repeat, url("images/bg-pattern-bottom.svg") bottom -34em right -48em no-repeat;
-
         background-color: hsl(185, 75%, 39%) ;
     }
-    
 
     .profile-pic {
         border: 0.35rem solid white;
         border-radius: 5rem;
         margin-top: 5rem;
-        /* margin-bottom: 3rem; */
-        /* margin-bottom: 1.5rem; */
         width: 6.5rem;
-
-        /* border-radius: 5rem; */
-        /* margin-top: 6rem; */
-        /* margin-bottom: 1rem; */
-        /* width: 7rem; */
     }
 
     .stats {
@@ -160,6 +147,4 @@ div.profile {
     .location {
         margin-top: 0.5rem;
     }
-
-
 }
